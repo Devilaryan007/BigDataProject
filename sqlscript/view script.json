@@ -1,0 +1,17 @@
+{
+	"name": "view script",
+	"properties": {
+		"content": {
+			"query": "create view gold.calender\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/dimensions/calendar_dim/',\n    FORMAT ='parquet'\n ) as query1\n\ncreate view gold.customer\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/dimensions/customer_dim/',\n    FORMAT ='parquet'\n ) as query2\n\ncreate view gold.prod_cat\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/fact/product_category',\n    FORMAT ='parquet'\n ) as query5\n\n\ncreate view gold.prod_subcat\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/fact/product_subcategory/',\n    FORMAT ='parquet'\n ) as query6\n\n\ncreate view gold.product\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/fact/products/',\n    FORMAT ='parquet'\n ) as query7\n\n\ncreate view gold.returns\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/dimensions/returns/',\n    FORMAT ='parquet'\n ) as query3\n\n\ncreate view gold.sales\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/fact/sales/',\n    FORMAT ='parquet'\n ) as query8\n\n\ncreate view gold.territories\n as\n select * from OPENROWSET (\n    BULK 'https://advrawlake.blob.core.windows.net/silver/dimensions/territories/',\n    FORMAT ='parquet'\n ) as query4\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
