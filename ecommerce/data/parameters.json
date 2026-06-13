@@ -1,34 +1,42 @@
 [
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/olist_order_items_dataset.csv",
-        "filename":"olist_order_items_dataset.csv"
+        "git_rel_path":"olist_order_items_dataset.csv",
+        "schema": "olist_database",
+        "table_name":"olist_order_items_dataset"
     },
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/olist_customers_dataset.csv",
-        "filename":"olist_customers_dataset.csv"
+        "git_rel_path":"olist_customers_dataset.csv",
+        "schema": "olist_database",
+        "table_name":"olist_customers_dataset"
     },
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/olist_order_payments_dataset.csv",
-        "filename":"olist_order_payments_dataset.csv"
+        "git_rel_path":"olist_order_payments_dataset.csv",
+        "schema": "olist_database",
+        "table_name":"olist_order_payments_dataset"
     },
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/olist_order_reviews_dataset.csv",
-        "filename":"olist_order_reviews_dataset.csv"
+        "git_rel_path":"olist_order_reviews_dataset.csv",
+        "schema": "olist_database",
+        "table_name":"olist_order_reviews_dataset"
     },
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/olist_orders_dataset.csv",
-        "filename":"olist_orders_dataset.csv"
+        "git_rel_path":"olist_orders_dataset.csv",
+        "schema": "olist_database",
+        "table_name":"olist_orders_dataset"
     },
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/olist_products_dataset.csv",
-        "filename":"olist_products_dataset.csv"
+        "git_rel_path":"olist_products_dataset.csv",
+        "schema": "olist_database",
+        "table_name":"olist_products_dataset"
     },
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/olist_sellers_dataset.csv",
-        "filename":"olist_sellers_dataset.csv"
+        "git_rel_path":"olist_sellers_dataset.csv",
+        "schema": "olist_database",
+        "table_name":"olist_sellers_dataset"
     },
     {
-        "git_base_url":"BigDataProject/refs/heads/main/ecommerce/data/product_category_name_translation.csv",
-        "filename":"product_category_name_translation.csv"
+        "git_rel_path":"product_category_name_translation.csv",
+        "schema": "olist_database",
+        "table_name":"product_category_name_translation"
     }    
 ]
